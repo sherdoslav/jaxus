@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      website layout
+    </title>
+    <style>
+      .bear-picture{
+        height: auto;
+        max-width: 35%;
+        border-radius: 1.3vw;
+        margin-top: 6.5%;
+        margin-left: 10%;
+        float: left;
+      }
+      .block1 p{
+        font-size: 2.2vw;
+        font-weight:bolder;
+        border-style: solid;
+        border-width: 0;
+        border-left-width: 0.5vw;
+        padding-left: 1%;
+        margin-left: 5%;
+        margin-right: 50px;
+        margin-top: 10%;
+        float: left;
+        width: auto;
+        max-width: 30%;
+      }
+      
+    </style>
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="mainStyle.css"/>
+  </head>
+  <body>
+    <script>
+      const body = document.body;
+      const currentTheme = localStorage.getItem("theme") || "normal";
+      body.classList.add(currentTheme);
+    </script>
+    <div class="topNav">
+        <a href="page1.html"><img src="JXS.png" class="jxs-picture"></a>
+        <a href="page2.html" class="tn tn-active">page 2</a>
+        <a href="page3.html" class="tn">page 3</a>
+      <button onclick="themeToggle();" class="sojuz-toggle" >
+        <img src="Hammer_and_sickle_black.png" class="hammer-sickle-picture"> 
+      </button>
+      <a href="about_us.html" class="tn tn-right">about us</a>
+    </div>
+    <div class="block1">
+      <img src="bear-photo.jpeg" class="bear-picture">
+      <p>"Bears of the revolution" aims to bring all of the sacred bears of mother russia to safety, as far as possible from the horrors of capitalism.
+      </p>
+
+    </div>
+    
+
+
+    <script src="themes.js"></script>
+  </body>
+</html>
