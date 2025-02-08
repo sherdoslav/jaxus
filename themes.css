@@ -1,0 +1,33 @@
+
+body.normal {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+body.sojuz {
+  background-color: rgb(104, 1, 1);
+  color: goldenrod;
+}
+body.normal button{
+  background-color: white;
+}
+body.sojuz button{
+  background-color: goldenrod;
+}
+body.normal .topNav {
+  background-color: #333;
+}
+body.normal .tn:hover {
+  background-color: #1f1e1e;
+}
+body.sojuz .topNav {
+  background-color: rgb(58, 0, 0);
+}
+body.sojuz .tn:hover {
+  background-color: rgb(44, 0, 0);
+}
+body.normal .topNav a {
+  color: rgb(255, 255, 255);
+}
+body.sojuz .topNav a {
+  color: goldenrod;
+}
